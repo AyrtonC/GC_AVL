@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A06ABD591C3DE95400137F78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A06ABD581C3DE95400137F78 /* main.c */; };
+		A06ABD611C3DE96F00137F78 /* GC_AVL.c in Sources */ = {isa = PBXBuildFile; fileRef = A06ABD5F1C3DE96F00137F78 /* GC_AVL.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		A06ABD551C3DE95400137F78 /* GarbageCollector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GarbageCollector; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06ABD581C3DE95400137F78 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A06ABD5F1C3DE96F00137F78 /* GC_AVL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GC_AVL.c; sourceTree = "<group>"; };
+		A06ABD601C3DE96F00137F78 /* GC_AVL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GC_AVL.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				A06ABD581C3DE95400137F78 /* main.c */,
+				A06ABD601C3DE96F00137F78 /* GC_AVL.h */,
+				A06ABD5F1C3DE96F00137F78 /* GC_AVL.c */,
 			);
 			path = GarbageCollector;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A06ABD591C3DE95400137F78 /* main.c in Sources */,
+				A06ABD611C3DE96F00137F78 /* GC_AVL.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +243,7 @@
 				A06ABD5E1C3DE95400137F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
