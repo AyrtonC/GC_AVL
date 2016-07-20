@@ -34,7 +34,7 @@ unsigned int changes;
 struct ptrTree* insertNode(struct ptrTree *tree, void *ID, unsigned long cnt)
 {
     if (tree != NULL){
-        if ((unsigned long)ID < (unsigned long)tree->ptrID){
+        if ((size_t)ID < (size_t)tree->ptrID){
             tree->left = insertNode(tree->left, ID, cnt);
         }else{
             tree->right = insertNode(tree->right, ID, cnt);
@@ -55,9 +55,9 @@ struct ptrTree* removeNode(struct ptrTree *tree, void *ID)
 {
     struct ptrTree *aux;
     if (tree != NULL){
-        if ((unsigned long)ID < (unsigned long)tree->ptrID){
+        if ((size_t)ID < (size_t)tree->ptrID){
             tree->left = removeNode(tree->left, ID);
-        }else if((unsigned long)ID > (unsigned long)tree->ptrID){
+        }else if((size_t)ID > (size_t)tree->ptrID){
             tree->right = removeNode(tree->right, ID);
         }else{
             if (tree->left == NULL && tree->right == NULL){
@@ -153,9 +153,9 @@ struct ptrTree* retrievePtrTree(void *ID)
     struct ptrTree *p;
     p = ptrsTable;
     while (p != NULL){
-        if ((unsigned long)ID < (unsigned long)p->ptrID){
+        if ((size_t)ID < (size_t)p->ptrID){
             p = p->left;
-        }else if ((unsigned long)ID > (unsigned long)p->ptrID){
+        }else if ((size_t)ID > (size_t)p->ptrID){
             p = p->right;
         }else{
             break;

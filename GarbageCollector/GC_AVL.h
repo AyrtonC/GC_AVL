@@ -25,6 +25,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdint.h>
 
 #define MAXHEIGHTDIFF 1
 #define MAXNUMOFCHANGES 10
